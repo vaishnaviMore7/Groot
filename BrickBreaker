@@ -1,0 +1,26 @@
+ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
+ */
+
+package com.mycompany.brickbreakergame;
+
+/**
+ *
+ * @author Lenovo
+ */
+import javax.swing.JFrame; // for give window to game 
+public class BrickBreakerGame {
+    public static void main(String[] args) {
+        JFrame obj = new JFrame(); // you create a new class where you implements the whole class
+        GamePlay gameplay = new GamePlay();  //all the game implement after over the game
+        obj.setSize(700,600);   // size of game window or frame as width and height
+        obj.setTitle("Break the Brick");  //it set title to the game
+        obj.setLocationRelativeTo(null); //the location of game as the windoe appers after run
+        obj.setResizable(false); // give ability to chnage size of frame
+        obj.setVisible(true);
+        obj.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //close window after press the menstion button
+        obj.add(gameplay);
+        
+        
+    }
+}
